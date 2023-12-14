@@ -1,2 +1,2 @@
-# Portfolio
-This repository is just a portfolio
+# Keyboard Website
+This project is made to honed my HTML and CSS skills
