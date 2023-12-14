@@ -1,0 +1,289 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="https://kit.fontawesome.com/656ff669d1.js" crossorigin="anonymous"></script>
+    <script src="Script1.js"></script>
+    <link href="StyleSheet4.css" rel="stylesheet">
+    <style>
+        @media screen and (max-width: 700px){
+            .bignav{
+                display: none;
+            }
+            .nav ul li{
+                list-style-type: none;
+                position: relative;
+                margin-top: -17px;
+                margin-left: 40%;
+                width: 68.46px;
+                height: 50px;
+            }
+            .nav ul li:hover{
+                cursor: pointer;
+            }
+            .nav ul li ul{
+                padding: 0;
+                position: absolute;
+                top: 69px;
+                left: 0;
+                display: none;
+                opacity: 0;
+                visibility: hidden;
+            }
+            .nav ul li ul li{
+                background-color: #3D3D3D;
+                display: block;
+                box-sizing: border-box;
+                width: 490px;
+                margin-left: -220px;
+            }
+            .nav ul li:hover ul{
+                display: block;
+                opacity: 1;
+                visibility: visible;
+            }
+            .nav ul li ul li a{
+                text-decoration: none;
+                color: #AAAAAA;
+                font-size: 18px;   
+                display: block;
+                padding: 15px;
+                text-align: center;
+            }
+            .nav ul li ul li a:hover{
+                color: white;
+            }
+            .pic{
+                flex-wrap: wrap;
+            }
+            .imgsml{
+                flex: 100%;
+            }
+        }
+        @media screen and (min-width: 701px){
+            .nav{
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <nav id="nav">
+            <div id="mySidepanel" class="sidepanel">
+                <div id="uppanel">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <a href="Login.html">Login</a>
+                    <a href="About.html">About</a>
+                    <a href="Service.html">Services</a>
+                    <a href="Contact.html">Contact</a>
+                    <hr>
+                    <br>
+                    <label for="chckbx" class="label">Switch</label>
+                    <div id="chckbx">
+                        <div class="boxtxt">Linear</div><input class="box" type="checkbox"><br>
+                        <div class="boxtxt">Tactile</div><input class="box" type="checkbox"><br>
+                        <div class="boxtxt">Clicky</div><input class="box" type="checkbox"><br>
+                    </div>
+                    <hr style="width: 85%;">
+                    <br>
+                    <label for="chckbx" class="label">Form Factor</label>
+                    <div id="chckbx">
+                        <div class="boxtxt">60%</div><input class="box" type="checkbox"><br>
+                        <div class="boxtxt">65%</div><input class="box" type="checkbox"><br>
+                        <div class="boxtxt">75%</div><input class="box" type="checkbox"><br>
+                        <div class="boxtxt">TKL</div><input class="box" type="checkbox"><br>
+                        <div class="boxtxt">100%</div><input class="box" type="checkbox"><br>
+                    </div>
+                    <hr style="width: 85%;">
+                    <br>
+                    <label for="chckbx" class="label">Keycaps</label>
+                    <div id="chckbx">
+                        <div class="boxtxt">ASA</div><input class="box" type="checkbox"><br>
+                        <div class="boxtxt">Cherry</div><input class="box" type="checkbox"><br>
+                        <div class="boxtxt">XDA</div><input class="box" type="checkbox"><br>
+                        <div class="boxtxt">OEM</div><input class="box" type="checkbox"><br>
+                    </div>
+                    <hr style="width: 85%;">
+                    <br>
+                    <label for="chckbx" class="label">Lubed</label>
+                    <div id="chckbx">
+                        <div class="boxtxt">Pre-Lubed</div><input class="box" type="checkbox"><br>
+                        <div class="boxtxt">Stock</div><input class="box" type="checkbox"><br>
+                    </div>
+                    <a><div id="filter"><id id="filtxt">Search</id></div></a>
+                    <br><br><br>
+                    <hr style="width: 85%;">
+                </div>
+            </div>
+            <div class="bignav">
+                <button class="openbtn" onclick="openNav()">&#9776;</button>
+                <a class="topnav" href="Prebuilt.html">Prebuilt</a>
+                <a class="topnav" href="Barebone.html">Barebone</a>
+                <a class="topnav" href="Switch.html">Switches</a>
+                <a class="topnav" href="Keycaps.html">Keycaps</a>
+                <a class="topnav" href="Accessories.html">Accessories</a>
+                <a class="logo" href="Assignment.html"><img src="logo.png" style="height: 50px; width: 68.46px;"></a>
+            </div>
+            <div class="nav">
+                <button class="openbtn" onclick="openNav()">&#9776;</button>
+                <ul>
+                    <li><img src="logo.png" style="height: 50px; width: 100%; position: absolute;">
+                        <ul>
+                            <li><a href="Assignment.html">Home</a></li>
+                            <li><a href="Prebuilt.html">Prebuilt</a></li>
+                            <li><a href="Barebone.html">Barebone</a></li>
+                            <li><a href="Switch.html">Switches</a></li>
+                            <li><a href="Keycaps.html">Keycaps</a></li>
+                            <li><a href="Accessories.html">Accessories</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                
+            </div>
+            <div class="search-box">
+                <input type="text" class="search-input" placeholder="Search...">
+                <a class="search-btn" href="#">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </a>
+            </div>
+        </nav>
+        <div id="container-content">
+            <div id="content area">
+                <div class="yt-cover" id="cover" style="background-color: rgb(52, 52, 52); text-align: center;"><div class="vidtxt">Switch</div></div>
+                <div id="vid">
+                    <iframe style="width: 100%;" height="506" src="https://www.youtube.com/embed/OgAf5oRtDZ8?playlist=OgAf5oRtDZ8&loop=1&autoplay=1&mute=1&controls=0&modestbranding=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div id="page-title">
+                    SWITCHES THE HEART OF THE KEYBOARD
+                </div>
+                <div id="page-content">
+                    <p class="intro">
+                        Switches are the core of a keyboard as they controls the whole feel of a keyboard and sound. For new comers in the keyboard community, basically switches
+                        varies in 3 category linear, tactile and clicky. A linear is basically no bumpy feel. a tactile with a bumpy feel and clicky with a bumpy feel and a click sound.
+                    </p>
+                    <hr>
+                    <p style="font-family: 'Copperplate Gothic'; font-size: 28px;">LINEAR</p>
+                    <div class="pic">
+                        <div class="imgsml">
+                            <a href="#"><img class="sellsml" src="https://42keebs.eu/wp-content/uploads/2021/01/IMG_20210210_143204.jpg"></a>
+                            <a href="#">
+                                <div class="overlaysml">
+                                    <div class="selltxtcont">
+                                        <div class="selltxtsml">GATERON YELLOW</div>
+                                        <div class="sellintrosml">MOST POPULAR LINEAR</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="imgsml">
+                            <a href="#"><img class="sellsml" src="https://www.techpowerup.com/review/building-a-keyboard-2-epomaker-gk96s-kit-akko-macaw-keycaps-gateron-ink-switches/images/black-2.jpg"></a>
+                            <a href="#">
+                                <div class="overlaysml">
+                                    <div class="selltxtcont">
+                                        <div class="selltxtsml">GATERON BLACK INK</div>
+                                        <div class="sellintrosml">BEST LINEAR</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="imgsml">
+                            <a href="#"><img class="sellsml" src="https://www.ebiz2u.com.my/image/adore/image/cache/data/all_product_images/product-4110/vDffrEBX1632407359-1000x750.jpg"></a>
+                            <a href="#">
+                                <div class="overlaysml">
+                                    <div class="selltxtcont">
+                                        <div class="selltxtsml">GLORIOUS LYNX</div>
+                                        <div class="sellintrosml">GLORIOUS LINEAR</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <br><br>
+                    <hr>
+                    <p style="font-family: 'Copperplate Gothic'; font-size: 28px;">TACTILE</p>
+                    <div class="pic">
+                        <div class="imgsml">
+                            <a href="#"><img class="sellsml" src="https://cdn.shopify.com/s/files/1/0068/3599/4706/products/8158ec48-3c0f-409d-8c04-3378f382f916.png?v=1598444295"></a>
+                            <a href="#">
+                                <div class="overlaysml">
+                                    <div class="selltxtcont">
+                                        <div class="selltxtsml">EQUALZ X TKC KIWI</div>
+                                        <div class="sellintrosml">67g TACTILE</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="imgsml">
+                            <a href="#"><img class="sellsml" src="https://www.eloquentclicks.com/wp-content/uploads/2021/12/Jelly-Blue-XQ.jpg"></a>
+                            <a href="#">
+                                <div class="overlaysml">
+                                    <div class="selltxtcont">
+                                        <div class="selltxtsml">AKKO JELLY BLUE</div>
+                                        <div class="sellintrosml">65g TACTILE</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="imgsml">
+                            <a href="#"><img class="sellsml" src="https://ae01.alicdn.com/kf/H5cc51b7f4c0c4ff9a7da66092f42541bO/Gazzew-Boba-U4T-RGB-version-Thocky-switch-clear-top-without-slot-mechanical-keyboard-switch-5pin.jpg_Q90.jpg_.webp"></a>
+                            <a href="#">
+                                <div class="overlaysml">
+                                    <div class="selltxtcont">
+                                        <div class="selltxtsml">BOBA U4T</div>
+                                        <div class="sellintrosml">62g TACTILE</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <br><br>
+                    <hr>
+                    <p style="font-family: 'Copperplate Gothic'; font-size: 28px;">CLICKY</p>
+                    <div class="pic">
+                        <div class="imgsml">
+                            <a href="#"><img class="sellsml" src="https://cdn.store-assets.com/s/612340/i/19140428.png?width=1024"></a>
+                            <a href="#">
+                                <div class="overlaysml">
+                                    <div class="selltxtcont">
+                                        <div class="selltxtsml">KAILH BOX WHITE</div>
+                                        <div class="sellintrosml">55g TACTILE</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="imgsml">
+                            <a href="#"><img class="sellsml" src="https://cf.shopee.com.my/file/78f4db26854c070fc8b3b76f1934b48e"></a>
+                            <a href="#">
+                                <div class="overlaysml">
+                                    <div class="selltxtcont">
+                                        <div class="selltxtsml">GATERON BLUE</div>
+                                        <div class="sellintrosml">60g TACTILE</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="imgsml">
+                            <a href="#"><img class="sellsml" src="https://images.squarespace-cdn.com/content/v1/5e5af256556661723b861bd1/1583038824418-XGWNACD6R84YCEHKBPHV/SherbetTop.jpg"></a>
+                            <a href="#">
+                                <div class="overlaysml">
+                                    <div class="selltxtcont">
+                                        <div class="selltxtsml">NOVELKEYS SHERBET</div>
+                                        <div class="sellintrosml">45g TACTILE</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <br><br>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        Created by Loh Yen Kuan, 2022
+    </div>
+</body>
+</html>

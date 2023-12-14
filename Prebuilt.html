@@ -1,0 +1,289 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="https://kit.fontawesome.com/656ff669d1.js" crossorigin="anonymous"></script>
+    <script src="Script1.js"></script>
+    <link href="StyleSheet4.css" rel="stylesheet">
+    <style>
+        @media screen and (max-width: 700px){
+            .bignav{
+                display: none;
+            }
+            .nav ul li{
+                list-style-type: none;
+                position: relative;
+                margin-top: -17px;
+                margin-left: 40%;
+                width: 68.46px;
+                height: 50px;
+            }
+            .nav ul li:hover{
+                cursor: pointer;
+            }
+            .nav ul li ul{
+                padding: 0;
+                position: absolute;
+                top: 69px;
+                left: 0;
+                display: none;
+                opacity: 0;
+                visibility: hidden;
+            }
+            .nav ul li ul li{
+                background-color: #3D3D3D;
+                display: block;
+                box-sizing: border-box;
+                width: 490px;
+                margin-left: -220px;
+            }
+            .nav ul li:hover ul{
+                display: block;
+                opacity: 1;
+                visibility: visible;
+            }
+            .nav ul li ul li a{
+                text-decoration: none;
+                color: #AAAAAA;
+                font-size: 18px;   
+                display: block;
+                padding: 15px;
+                text-align: center;
+            }
+            .nav ul li ul li a:hover{
+                color: white;
+            }
+            .pic{
+                flex-wrap: wrap;
+            }
+            .imgsml{
+                flex: 100%;
+            }
+        }
+        @media screen and (min-width: 701px){
+            .nav{
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <nav id="nav">
+            <div id="mySidepanel" class="sidepanel">
+                <div id="uppanel">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <a href="Login.html">Login</a>
+                    <a href="About.html">About</a>
+                    <a href="Service.html">Services</a>
+                    <a href="Contact.html">Contact</a>
+                    <hr>
+                    <br>
+                    <label for="chckbx" class="label">Switch</label>
+                    <div id="chckbx">
+                        <div class="boxtxt">Linear</div><input class="box" type="checkbox"><br>
+                        <div class="boxtxt">Tactile</div><input class="box" type="checkbox"><br>
+                        <div class="boxtxt">Clicky</div><input class="box" type="checkbox"><br>
+                    </div>
+                    <hr style="width: 85%;">
+                    <br>
+                    <label for="chckbx" class="label">Form Factor</label>
+                    <div id="chckbx">
+                        <div class="boxtxt">60%</div><input class="box" type="checkbox"><br>
+                        <div class="boxtxt">65%</div><input class="box" type="checkbox"><br>
+                        <div class="boxtxt">75%</div><input class="box" type="checkbox"><br>
+                        <div class="boxtxt">TKL</div><input class="box" type="checkbox"><br>
+                        <div class="boxtxt">100%</div><input class="box" type="checkbox"><br>
+                    </div>
+                    <hr style="width: 85%;">
+                    <br>
+                    <label for="chckbx" class="label">Keycaps</label>
+                    <div id="chckbx">
+                        <div class="boxtxt">ASA</div><input class="box" type="checkbox"><br>
+                        <div class="boxtxt">Cherry</div><input class="box" type="checkbox"><br>
+                        <div class="boxtxt">XDA</div><input class="box" type="checkbox"><br>
+                        <div class="boxtxt">OEM</div><input class="box" type="checkbox"><br>
+                    </div>
+                    <hr style="width: 85%;">
+                    <br>
+                    <label for="chckbx" class="label">Lubed</label>
+                    <div id="chckbx">
+                        <div class="boxtxt">Pre-Lubed</div><input class="box" type="checkbox"><br>
+                        <div class="boxtxt">Stock</div><input class="box" type="checkbox"><br>
+                    </div>
+                    <a id="tag"><div id="filter"><id id="filtxt">Search</id></div></a>
+                    <br><br><br>
+                    <hr style="width: 85%;">
+                </div>
+            </div>
+            <div class="bignav">
+                <button class="openbtn" onclick="openNav()">&#9776;</button>
+                <a class="topnav" href="Prebuilt.html">Prebuilt</a>
+                <a class="topnav" href="Barebone.html">Barebone</a>
+                <a class="topnav" href="Switch.html">Switches</a>
+                <a class="topnav" href="Keycaps.html">Keycaps</a>
+                <a class="topnav" href="Accessories.html">Accessories</a>
+                <a class="logo" href="Assignment.html"><img src="logo.png" style="height: 50px; width: 68.46px;"></a>
+            </div>
+            <div class="nav">
+                <button class="openbtn" onclick="openNav()">&#9776;</button>
+                <ul>
+                    <li><img src="logo.png" style="height: 50px; width: 100%; position: absolute;">
+                        <ul>
+                            <li><a href="Assignment.html">Home</a></li>
+                            <li><a href="Prebuilt.html">Prebuilt</a></li>
+                            <li><a href="Barebone.html">Barebone</a></li>
+                            <li><a href="Switch.html">Switches</a></li>
+                            <li><a href="Keycaps.html">Keycaps</a></li>
+                            <li><a href="Accessories.html">Accessories</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                
+            </div>
+            <div class="search-box">
+                <input type="text" class="search-input" placeholder="Search...">
+                <a class="search-btn" href="#">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </a>
+            </div>
+        </nav>
+        <div id="container-content">
+            <div id="content area">
+                <div class="yt-cover" id="cover" style="background-color: rgb(52, 52, 52); text-align: center;"><div class="vidtxt">Prebuilt</div></div>
+                <div id="vid">
+                    <iframe style="width: 100%;" height="506" src="https://www.youtube.com/embed/iYREsiK3SXM?playlist=iYREsiK3SXM&loop=1&autoplay=1&mute=1&controls=0&modestbranding=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div id="page-title">
+                    PREBUILT KEYBOARD FROM YOUR TRUSTED RETAILER
+                </div>
+                <div id="page-content">
+                    <p class="intro">
+                        Keebs offers a variety range of price and branded keyboard, such as Logitech, Razer, Steel Series etc. A prebuilt is a keyboard that doesn't require modding,
+                        everything is built in place and ready to go.
+                    </p>
+                    <hr>
+                    <p style="font-family: 'Copperplate Gothic'; font-size: 28px;">GLORIOUS</p>
+                    <div class="pic">
+                        <div class="imgsml">
+                            <a href="#"><img class="sellsml" src="gmmk2sml.png"></a>
+                            <a href="#">
+                                <div class="overlaysml">
+                                    <div class="selltxtcont">
+                                        <div class="selltxtsml">GMMK 2</div>
+                                        <div class="sellintrosml">LATEST KEYBOARD BY GLORIOUS</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="imgsml">
+                            <a href="#"><img class="sellsml" src="gmmkprosml.png"></a>
+                            <a href="#">
+                                <div class="overlaysml">
+                                    <div class="selltxtcont">
+                                        <div class="selltxtsml">GMMK PRO</div>
+                                        <div class="sellintrosml">THE CLASSIC GLORIOUS KEEBS</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="imgsml">
+                            <a href="#"><img class="sellsml" src="gmmksml.png"></a>
+                            <a href="#">
+                                <div class="overlaysml">
+                                    <div class="selltxtcont">
+                                        <div class="selltxtsml">GMMK</div>
+                                        <div class="sellintrosml">GLORIOUS FIRST KEEBS</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <br><br>
+                    <hr>
+                    <p style="font-family: 'Copperplate Gothic'; font-size: 28px;">RAZER</p>
+                    <div class="pic">
+                        <div class="imgsml">
+                            <a href="#"><img class="sellsml" src="https://assets2.razerzone.com/images/pnx.assets/21c7f663fd0f53f5fdda9ba662c8858c/razer-blackwidow-v3-pro-category-500x500.jpg"></a>
+                            <a href="#">
+                                <div class="overlaysml">
+                                    <div class="selltxtcont">
+                                        <div class="selltxtsml">BLACKWIDOW</div>
+                                        <div class="sellintrosml">RAZER'S FLAGSHIP</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="imgsml">
+                            <a href="#"><img class="sellsml" src="https://assets3.razerzone.com/-qeuHhuWc1bGPifrsCTVZzrSI5Q=/1500x1000/https%3A%2F%2Fhybrismediaprod.blob.core.windows.net%2Fsys-master-phoenix-images-container%2Fhc8%2Fh54%2F9081235374110%2FRazer-Huntsman-Elite-gallery-hero.jpg"></a>
+                            <a href="#">
+                                <div class="overlaysml">
+                                    <div class="selltxtcont">
+                                        <div class="selltxtsml">HUNTSMAN</div>
+                                        <div class="sellintrosml">A CLASSIC FROM RAZER</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="imgsml">
+                            <a href="#"><img class="sellsml" src="https://assets3.razerzone.com/OcNb_bURh_RPjizwnfRWfJ3Uf0g=/1500x1000/https%3A%2F%2Fhybrismediaprod.blob.core.windows.net%2Fsys-master-phoenix-images-container%2Fh6c%2Fhfc%2F9081238913054%2FornataV2-prodpg-gallery-1500x1000-1.jpg"></a>
+                            <a href="#">
+                                <div class="overlaysml">
+                                    <div class="selltxtcont">
+                                        <div class="selltxtsml">ORNATA V2</div>
+                                        <div class="sellintrosml">RAZER'S HYBRID KEEBS</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <br><br>
+                    <hr>
+                    <p style="font-family: 'Copperplate Gothic'; font-size: 28px;">LOGITECH</p>
+                    <div class="pic">
+                        <div class="imgsml">
+                            <a href="#"><img class="sellsml" src="https://cdn.mos.cms.futurecdn.net/5vw6CkudNB3keA5pZxeHXg-1200-80.jpeg"></a>
+                            <a href="#">
+                                <div class="overlaysml">
+                                    <div class="selltxtcont">
+                                        <div class="selltxtsml">G915</div>
+                                        <div class="sellintrosml">A GOOD KEEBS FROM LOGITECH</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="imgsml">
+                            <a href="#"><img class="sellsml" src="https://cdn.shopify.com/s/files/1/1974/9033/products/1_9dbfe404-7831-4046-9795-86199442a5d3_1024x1024.jpg?v=1638145412"></a>
+                            <a href="#">
+                                <div class="overlaysml">
+                                    <div class="selltxtcont">
+                                        <div class="selltxtsml">G PRO X</div>
+                                        <div class="sellintrosml">LOGITECH'S FLAGSHIP</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="imgsml">
+                            <a href="#"><img class="sellsml" src="https://qwertycomputer.co.id/wp-content/uploads/2021/07/f04de26e-9849-406a-92d1-9d233d4a21e8.jpg"></a>
+                            <a href="#">
+                                <div class="overlaysml">
+                                    <div class="selltxtcont">
+                                        <div class="selltxtsml">G213 PRODIGY</div>
+                                        <div class="sellintrosml">A BUDGET KEEBS FROM LOGITECH</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <br><br>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer id="footer">
+        Created by Loh Yen Kuan, 2022
+    </footer>
+</body>
+</html>

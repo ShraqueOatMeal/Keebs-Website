@@ -1,0 +1,235 @@
+﻿body{
+    background-image: url('login wallpaper.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    font-family: Arial;
+}
+
+#color {
+    background-color: rgb(0,0,0,0.8);
+    width: 1921px;
+    height: 939px;
+    margin: -10px -40px -40px -10px;
+    position: absolute;
+}
+
+#fname{
+    color: red;
+    margin-right: 300px;
+    visibility: hidden;
+}
+#lname{
+    color: red;
+    margin-right: 300px;
+    visibility: hidden;
+}
+#mail{
+    color: red;
+    margin-right: 300px;
+    visibility: hidden;
+}
+#pass{
+    color: red;
+    margin-right: 300px;
+    visibility: hidden;
+}
+#cpass{
+    color: red;
+    margin-right: 300px;
+    visibility: hidden;
+}
+#mail1{
+    color: red;
+    margin-right: 300px;
+    visibility: hidden;
+}
+#pass1{
+    color: red;
+    margin-right: 300px;
+    visibility: hidden;
+}
+h2{
+    color: white;
+} 
+
+#cont{
+    display: flex;
+    margin-top: 10px;
+}
+
+#logsigncont{
+    flex: 50%;
+    padding: 5px;
+    text-align: center;
+    height: 910px;
+}
+
+.placement{
+    text-align: center;
+    margin-top: 10%;
+}
+
+input{
+    color: #818181;
+    background-color: #3D3D3D;
+    border: none;
+    width: 400px;
+    height: 50px;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+input:focus{
+    color: white;
+}
+
+input:focus::placeholder{
+    color: white;
+}
+
+button {
+    width: 400px;
+    height: 50px;
+    font-size: 18px;
+    border: 1px solid;
+    border-radius: 5px;
+    border-color: #818181;
+    background-color: transparent;
+    color: #818181;
+}
+
+button:hover{
+    border-color: orange;
+    color: orange;
+    border: 2px solid;
+}
+
+i{
+    font-size: 28px;
+    margin-left: 10px;
+    color: #818181;
+}
+
+i:hover{
+    color: white;
+}
+hr{
+    visibility: hidden;
+}
+
+@media only screen and (max-width: 1900px) {
+
+    body {
+        background-image: url('login wallpaper.png');
+        background-repeat: no-repeat;
+        background-size: 100%;
+        font-family: Arial;
+    }
+
+    #color {
+        background-color: rgb(0,0,0,0.8);
+        width: 1538px;
+        height: 723px;
+        margin: -10px -5px -10px -10px;
+        position: absolute;
+    }
+
+    h2 {
+        color: white;
+    }
+
+    #cont {
+        display: flex;
+        margin-top: 10px;
+    }
+
+    #logsigncont {
+        flex: 50%;
+        padding: 5px;
+        text-align: center;
+        height: 700px;
+    }
+
+    .placement {
+        text-align: center;
+        margin-top: 10%;
+    }
+
+    input {
+        color: #818181;
+        background-color: #3D3D3D;
+        border: none;
+        width: 400px;
+        height: 50px;
+        border-radius: 5px;
+        font-size: 18px;
+    }
+
+        input:focus {
+            color: white;
+        }
+
+            input:focus::placeholder {
+                color: white;
+            }
+
+    button {
+        width: 400px;
+        height: 50px;
+        font-size: 18px;
+        border: 1px solid;
+        border-radius: 5px;
+        border-color: #818181;
+        background-color: transparent;
+        color: #818181;
+    }
+
+        button:hover {
+            border-color: orange;
+            color: orange;
+            border: 2px solid;
+        }
+
+    i {
+        font-size: 28px;
+        margin-left: 10px;
+        color: #818181;
+    }
+
+        i:hover {
+            color: white;
+        }
+    hr{
+        visibility: hidden;
+    }
+}
+@media screen and (max-width: 700px){
+    body {
+        background-image: url('login wallpaper.png');
+        background-repeat: no-repeat;
+        background-size: 700px 1450px;
+        font-family: Arial;
+    }
+    #color {
+        background-color: rgb(0,0,0,0.8);
+        width: 700px;
+        height: 1450px;
+        margin: -10px -5px -10px -10px;
+        position: absolute;
+    }
+    #cont {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 10px;
+    }
+    #logsigncont {
+        flex: 50%;
+        padding: 5px;
+        text-align: center;
+        height: 700px;
+    }
+    hr{
+        width: 100%;
+        visibility: visible;
+    }
+}

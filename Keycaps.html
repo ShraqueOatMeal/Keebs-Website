@@ -1,0 +1,289 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="https://kit.fontawesome.com/656ff669d1.js" crossorigin="anonymous"></script>
+    <script src="Script1.js"></script>
+    <link href="StyleSheet4.css" rel="stylesheet">
+    <style>
+        @media screen and (max-width: 700px){
+            .bignav{
+                display: none;
+            }
+            .nav ul li{
+                list-style-type: none;
+                position: relative;
+                margin-top: -17px;
+                margin-left: 40%;
+                width: 68.46px;
+                height: 50px;
+            }
+            .nav ul li:hover{
+                cursor: pointer;
+            }
+            .nav ul li ul{
+                padding: 0;
+                position: absolute;
+                top: 69px;
+                left: 0;
+                display: none;
+                opacity: 0;
+                visibility: hidden;
+            }
+            .nav ul li ul li{
+                background-color: #3D3D3D;
+                display: block;
+                box-sizing: border-box;
+                width: 490px;
+                margin-left: -220px;
+            }
+            .nav ul li:hover ul{
+                display: block;
+                opacity: 1;
+                visibility: visible;
+            }
+            .nav ul li ul li a{
+                text-decoration: none;
+                color: #AAAAAA;
+                font-size: 18px;   
+                display: block;
+                padding: 15px;
+                text-align: center;
+            }
+            .nav ul li ul li a:hover{
+                color: white;
+            }
+            .pic{
+                flex-wrap: wrap;
+            }
+            .imgsml{
+                flex: 100%;
+            }
+        }
+        @media screen and (min-width: 701px){
+            .nav{
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <nav id="nav">
+            <div id="mySidepanel" class="sidepanel">
+                <div id="uppanel">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <a href="Login.html">Login</a>
+                    <a href="About.html">About</a>
+                    <a href="Service.html">Services</a>
+                    <a href="Contact.html">Contact</a>
+                    <hr>
+                    <br>
+                    <label for="chckbx" class="label">Switch</label>
+                    <div id="chckbx">
+                        <div class="boxtxt">Linear</div><input class="box" type="checkbox"><br>
+                        <div class="boxtxt">Tactile</div><input class="box" type="checkbox"><br>
+                        <div class="boxtxt">Clicky</div><input class="box" type="checkbox"><br>
+                    </div>
+                    <hr style="width: 85%;">
+                    <br>
+                    <label for="chckbx" class="label">Form Factor</label>
+                    <div id="chckbx">
+                        <div class="boxtxt">60%</div><input class="box" type="checkbox"><br>
+                        <div class="boxtxt">65%</div><input class="box" type="checkbox"><br>
+                        <div class="boxtxt">75%</div><input class="box" type="checkbox"><br>
+                        <div class="boxtxt">TKL</div><input class="box" type="checkbox"><br>
+                        <div class="boxtxt">100%</div><input class="box" type="checkbox"><br>
+                    </div>
+                    <hr style="width: 85%;">
+                    <br>
+                    <label for="chckbx" class="label">Keycaps</label>
+                    <div id="chckbx">
+                        <div class="boxtxt">ASA</div><input class="box" type="checkbox"><br>
+                        <div class="boxtxt">Cherry</div><input class="box" type="checkbox"><br>
+                        <div class="boxtxt">XDA</div><input class="box" type="checkbox"><br>
+                        <div class="boxtxt">OEM</div><input class="box" type="checkbox"><br>
+                    </div>
+                    <hr style="width: 85%;">
+                    <br>
+                    <label for="chckbx" class="label">Lubed</label>
+                    <div id="chckbx">
+                        <div class="boxtxt">Pre-Lubed</div><input class="box" type="checkbox"><br>
+                        <div class="boxtxt">Stock</div><input class="box" type="checkbox"><br>
+                    </div>
+                    <a><div id="filter"><id id="filtxt">Search</id></div></a>
+                    <br><br><br>
+                    <hr style="width: 85%;">
+                </div>
+            </div>
+            <div class="bignav">
+                <button class="openbtn" onclick="openNav()">&#9776;</button>
+                <a class="topnav" href="Prebuilt.html">Prebuilt</a>
+                <a class="topnav" href="Barebone.html">Barebone</a>
+                <a class="topnav" href="Switch.html">Switches</a>
+                <a class="topnav" href="Keycaps.html">Keycaps</a>
+                <a class="topnav" href="Accessories.html">Accessories</a>
+                <a class="logo" href="Assignment.html"><img src="logo.png" style="height: 50px; width: 68.46px;"></a>
+            </div>
+            <div class="nav">
+                <button class="openbtn" onclick="openNav()">&#9776;</button>
+                <ul>
+                    <li><img src="logo.png" style="height: 50px; width: 100%; position: absolute;">
+                        <ul>
+                            <li><a href="Assignment.html">Home</a></li>
+                            <li><a href="Prebuilt.html">Prebuilt</a></li>
+                            <li><a href="Barebone.html">Barebone</a></li>
+                            <li><a href="Switch.html">Switches</a></li>
+                            <li><a href="Keycaps.html">Keycaps</a></li>
+                            <li><a href="Accessories.html">Accessories</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                
+            </div>
+            <div class="search-box">
+                <input type="text" class="search-input" placeholder="Search...">
+                <a class="search-btn" href="#">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </a>
+            </div>
+        </nav>
+        <div id="container-content">
+            <div id="content area">
+                <div class="yt-cover" id="cover" style="background-color: rgb(52, 52, 52); text-align: center;"><div class="vidtxt">Keycaps</div></div>
+                <div id="vid">
+                    <iframe style="width: 100%;" height="506" src="https://www.youtube.com/embed/9fdE3q1ji-w?playlist=9fdE3q1ji-w&loop=1&autoplay=1&mute=1&controls=0&modestbranding=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div id="page-title">
+                    KEYCAPS THE MAIN APPEARANCE OF YOUR KEYBOARD
+                </div>
+                <div id="page-content">
+                    <p class="intro">
+                        Keycaps are one of the most expensive part of your keyboard built, and it is the main appearance of your keyboard. Keycaps they convey the whole personality of
+                        the users. Keycaps are also very important in terms of the accoustic for your keyboard depends on the material used on the keyboard, but it's not that major.
+                    </p>
+                    <hr>
+                    <p style="font-family: 'Copperplate Gothic'; font-size: 28px;">AKKO</p>
+                    <div class="pic">
+                        <div class="imgsml">
+                            <a href="#"><img class="sellsml" src="https://ae01.alicdn.com/kf/Ud57126c9be7746aa91ff45ca1161fc68A/AKKO-Black-Pink-Keycaps-ASA-Cherry-Profile-Keycaps-Set-Double-shot-PBT-108-229-Full-Keycaps.png"></a>
+                            <a href="#">
+                                <div class="overlaysml">
+                                    <div class="selltxtcont">
+                                        <div class="selltxtsml">BLACK & PINK</div>
+                                        <div class="sellintrosml">ASA/CHERRY PROFILE DOUBLE SHOT PBT</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="imgsml">
+                            <a href="#"><img class="sellsml" src="https://ae01.alicdn.com/kf/U16c6f49c5da14889ae46db9a433fc8f2u/AKKO-NEON-Keycaps-Set-Cherry-ASA-Profile-Double-shot-PBT-108-Full-Keycaps-Set-with-49.png"></a>
+                            <a href="#">
+                                <div class="overlaysml">
+                                    <div class="selltxtcont">
+                                        <div class="selltxtsml">NEON</div>
+                                        <div class="sellintrosml">ASA/CHERRY PROFILE DOUBLE SHOT PBT</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="imgsml">
+                            <a href="#"><img class="sellsml" src="https://ae01.alicdn.com/kf/Ua38d5e9d0bcb4de282321dda98156602J/AKKO-Carbon-Retro-Keycaps-158-Keys-ASA-229-Keys-Cherry-Profile-Double-shot-PBT-Full-Keycaps.jpg_Q90.jpg_.webp"></a>
+                            <a href="#">
+                                <div class="overlaysml">
+                                    <div class="selltxtcont">
+                                        <div class="selltxtsml">CARBON RETRO</div>
+                                        <div class="sellintrosml">ASA/CHERRY PROFILE DOUBLE SHOT PBT</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <br><br>
+                    <hr>
+                    <p style="font-family: 'Copperplate Gothic'; font-size: 28px;">GLORIOUS</p>
+                    <div class="pic">
+                        <div class="imgsml">
+                            <a href="#"><img class="sellsml" src="https://media.karousell.com/media/photos/products/2022/2/19/pc_glorious_gpbt_keycaps__nebu_1645266911_bc4e623a"></a>
+                            <a href="#">
+                                <div class="overlaysml">
+                                    <div class="selltxtcont">
+                                        <div class="selltxtsml">NEBULA</div>
+                                        <div class="sellintrosml">CHERRY PROFILE DOUBLESHOT PBT</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="imgsml">
+                            <a href="#"><img class="sellsml" src="aura.png"></a>
+                            <a href="#">
+                                <div class="overlaysml">
+                                    <div class="selltxtcont">
+                                        <div class="selltxtsml">AURA</div>
+                                        <div class="sellintrosml">CHERRY PROFILE DOUBLESHOT PBT</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="imgsml">
+                            <a href="#"><img class="sellsml" src="celestialfire.png"></a>
+                            <a href="#">
+                                <div class="overlaysml">
+                                    <div class="selltxtcont">
+                                        <div class="selltxtsml">CELESTIAL FIRE</div>
+                                        <div class="sellintrosml">CHERRY PROFILE DOUBLESHOT PBT</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <br><br>
+                    <hr>
+                    <p style="font-family: 'Copperplate Gothic'; font-size: 28px;">KBDFANS</p>
+                    <div class="pic">
+                        <div class="imgsml">
+                            <a href="#"><img class="sellsml" src="https://cdn.shopify.com/s/files/1/1473/3902/products/01basekit_black_1024x1024.jpg?v=1649830005"></a>
+                            <a href="#">
+                                <div class="overlaysml">
+                                    <div class="selltxtcont">
+                                        <div class="selltxtsml">COMMANDER</div>
+                                        <div class="sellintrosml">HIPRO PROFILE DYESUB PBT</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="imgsml">
+                            <a href="#"><img class="sellsml" src="https://cdn.shopify.com/s/files/1/1473/3902/products/01BASE_1024x1024.jpg?v=1650259514"></a>
+                            <a href="#">
+                                <div class="overlaysml">
+                                    <div class="selltxtcont">
+                                        <div class="selltxtsml">PURPOLCH</div>
+                                        <div class="sellintrosml">CHERRY PROFILE DOUBLESHOT PBT</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="imgsml">
+                            <a href="#"><img class="sellsml" src="https://cdn.shopify.com/s/files/1/1473/3902/products/5_5221d4ac-95e4-4367-9404-2cc59936dee4_900x.jpg?v=1635215987"></a>
+                            <a href="#">
+                                <div class="overlaysml">
+                                    <div class="selltxtcont">
+                                        <div class="selltxtsml">GMK UNIVERSE</div>
+                                        <div class="sellintrosml">CHERRY PROFILE DOUBLESHOT ABS</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <br><br>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        Created by Loh Yen Kuan, 2022
+    </div>
+</body>
+</html>

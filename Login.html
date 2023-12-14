@@ -1,0 +1,153 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="login.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/656ff669d1.js" crossorigin="anonymous"></script>
+    
+</head>
+
+<body>
+    <div id="color">
+        <div id="cont">
+            <a href="Assignment.html"><i class="fa-solid fa-arrow-left"></i></a>
+            <div id="logsigncont" style="border-right: 2px solid #818181;">
+                <div class="placement">
+                    <h2>Sign Up</h2>
+                    <form id="signup">
+                        <input type="text" id="input" placeholder="First Name"><br>
+                        <alert1 id="fname">*Field is empty</alert1><br><br>
+                        <input type="text" id="input1" placeholder="Last Name"><br>
+                        <alert1 id="lname">*Field is empty</alert1><br><br>
+                        <input type="email" id="input2" onclick="checkEmail()" placeholder="User@email.com"><br>
+                        <alert1 id="mail">*Field is empty</alert1><br><br>
+                        <input type="password" id="input3" placeholder="Password"><br>
+                        <alert1 id="pass">*Field is empty</alert1><br><br>
+                        <input type="password" id="input4" placeholder="Confirm Password"><br>
+                        <alert1 id="cpass">*Field is empty</alert1><br><br>
+                        <button type="button" onclick="empty()">Sign Up</button>
+                        
+                    </form>
+                    <script type="text/javascript">
+                            function empty(){
+                                var fname = input.value;
+                                var lname = input1.value;
+                                var mail = input2.value;
+                                var pass = input3.value;
+                                var cpass = input4.value;
+                                var form = document.getElementById("signup");
+                                var ftxt = document.getElementById("fname");
+                                var ltxt = document.getElementById("lname");
+                                var mtxt = document.getElementById("mail");
+                                var ptxt = document.getElementById("pass");
+                                var ctxt = document.getElementById("cpass");
+                                var email=document.getElementById("input2");
+                                var filter=/^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/
+
+                                if(fname == ""){
+                                ftxt.style.visibility = "visible";
+                                }
+                                else{
+                                ftxt.style.visibility = "hidden";
+                                }
+
+                                if(lname == ""){
+                                ltxt.style.visibility = "visible";
+                                }
+                                else{
+                                ltxt.style.visibility = "hidden";
+                                }
+
+                                if(mail == ""){
+                                mtxt.style.visibility = "visible";
+                                }
+                                else{
+                                mtxt.style.visibility = "hidden";
+                                }
+
+                                if(pass == ""){
+                                ptxt.style.visibility = "visible";
+                                }
+                                else{
+                                ptxt.style.visibility = "hidden";
+                                }
+
+                                if(cpass == ""){
+                                ctxt.style.visibility = "visible";
+                                }
+                                else{
+                                ctxt.style.visibility = "hidden";
+                                }
+                                if(pass !== cpass){
+                                    alert("Password not match");
+                                    input3.value = "";
+                                    input4.value = "";
+                                    return
+                                }
+                                if(!filter.test(email.value) && mail.length > 0){
+                                    alert("Invalid Email format");
+                                }
+
+                                if(fname.length > 0 && lname.length > 0 && mail.length > 0 && pass.length > 0 && cpass.length > 0 && filter.test(email.value)){
+                                    form.reset();
+                                    alert("Registered Successfully");
+                                }
+                            }
+                        </script>
+                </div>
+            </div>
+            <hr>
+            <div id="logsigncont">
+                <div class="placement">
+                    <h2>Login</h2>
+                    <form id="login">
+                        <input type="text" id="input5" placeholder="User@email.com"><br>
+                        <alert1 id="mail1">*Field is empty</alert1><br><br>
+                        <input type="password" id="input6" placeholder="Password"><br>
+                        <alert1 id="pass1">*Field is empty</alert1><br><br>
+                        <button type="button" onclick="empty2()">Login</button>
+                    </form>
+                    <script>
+                        function empty2(){
+                            var mail1 = input5.value;
+                            var pass1 = input6.value;
+                            var form1 = document.getElementById("login")
+                            var mtxt1 = document.getElementById("mail1");
+                            var ptxt1 = document.getElementById("pass1");
+                            var email1 = document.getElementById("input5")
+                            var filter1 = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/
+
+                            if(mail1 == ""){
+                                mtxt1.style.visibility = "visible";
+                            }
+                            else{
+                                mtxt1.style.visibility = "hidden";
+                            }
+
+                            if(pass1 == ""){
+                                ptxt1.style.visibility = "visible";
+                            }
+                            else{
+                                ptxt1.style.visibility = "hidden";
+                            }
+
+                            if(!filter1.test(email1.value) && mail1.length > 0){
+                                    alert("Invalid Email format");
+                            }
+
+                            if(mail1.length > 0 && filter1.test(email1.value) && pass1.length > 0){
+                                form1.reset()
+                                alert("Login Successfully")
+                                window.location.href= "Assignment.html";
+                            }
+                        }
+                        
+                    </script>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

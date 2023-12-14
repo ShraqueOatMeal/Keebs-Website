@@ -1,0 +1,164 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="StyleSheet4.css" rel="stylesheet">
+    <script src="Script1.js"></script>
+    <script src="https://kit.fontawesome.com/656ff669d1.js" crossorigin="anonymous"></script>
+    <style>
+        #brand{
+            color: #818181;
+            font-size: 22px;
+        }
+
+        #brand:hover{
+            color: white;
+            cursor: pointer;
+        }
+    @media screen and (max-width: 700px){
+        .bignav{
+                display: none;
+            }
+            .nav ul li{
+                list-style-type: none;
+                position: relative;
+                margin-top: -17px;
+                margin-left: 40%;
+                width: 68.46px;
+                height: 50px;
+            }
+            .nav ul li:hover{
+                cursor: pointer;
+            }
+            .nav ul li ul{
+                padding: 0;
+                position: absolute;
+                top: 69px;
+                left: 0;
+                display: none;
+                opacity: 0;
+                visibility: hidden;
+            }
+            .nav ul li ul li{
+                background-color: #3D3D3D;
+                display: block;
+                box-sizing: border-box;
+                width: 490px;
+                margin-left: -220px;
+            }
+            .nav ul li:hover ul{
+                display: block;
+                opacity: 1;
+                visibility: visible;
+            }
+            .nav ul li ul li a{
+                text-decoration: none;
+                color: #AAAAAA;
+                font-size: 18px;   
+                display: block;
+                padding: 15px;
+                text-align: center;
+            }
+            .nav ul li ul li a:hover{
+                color: white;
+            } 
+            #contfooter{
+                    width: 1150px;
+                }
+    }
+    @media screen and (min-width: 701px){
+                .nav{
+                    display: none;
+                }
+            }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <nav id="nav">
+            <div id="mySidepanel" class="sidepanel">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="Login.html">Login</a>
+                <a href="About.html">About</a>
+                <a href="Service.html">Services</a>
+                <a href="Contact.html">Contact</a>
+            </div>
+            <div class="bignav">
+                <button class="openbtn" onclick="openNav()">&#9776;</button>
+                <a class="topnav" href="Prebuilt.html">Prebuilt</a>
+                <a class="topnav" href="Barebone.html">Barebone</a>
+                <a class="topnav" href="Switch.html">Switches</a>
+                <a class="topnav" href="Keycaps.html">Keycaps</a>
+                <a class="topnav" href="Accessories.html">Accessories</a>
+                <a class="logo" href="Assignment.html"><img src="logo.png" style="height: 50px; width: 68.46px;"></a>
+            </div>
+            <div class="nav">
+                <button class="openbtn" onclick="openNav()">&#9776;</button>
+                <ul>
+                    <li><img src="logo.png" style="height: 50px; width: 100%; position: absolute;">
+                        <ul>
+                            <li><a href="Assignment.html">Home</a></li>
+                            <li><a href="Prebuilt.html">Prebuilt</a></li>
+                            <li><a href="Barebone.html">Barebone</a></li>
+                            <li><a href="Switch.html">Switches</a></li>
+                            <li><a href="Keycaps.html">Keycaps</a></li>
+                            <li><a href="Accessories.html">Accessories</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                
+            </div>
+            <div class="search-box">
+                <input type="text" class="search-input" placeholder="Search...">
+                <a class="search-btn" href="#">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </a>
+            </div>
+        </nav>
+        <div style="margin-left: auto; margin-right: auto; width: 1100px; display: flex; flex-wrap: wrap;" id="content">
+            <div id="topcontent">
+                <div id="contacttxt" style="width: 30%; float: left;">
+                    <p style="color: orange; font-size: 18px; text-align: left; margin-top: 100px;">CONTACT</p>
+                    <p style="color: white; font-size: 38px; text-align: left; margin-top: -10px;">GET IN TOUCH</p>
+                    <p style="color: red; font-style: italic; font-size: 12px; font-family: 'Times New Roman'; margin-top: -40px;">It would be great to have some feedbacks!</p>
+                    <p style="color: #818181; font-style: italic; font-size: 14px; font-family: 'Times New Roman'; line-height: 1.5;">Get in contact -  we would love to chat with our customers, have some coffee, talk about future goals or even a simple hello.</p>
+                    <hr>
+                </div>
+                <div id="map" style="width: 65%; float: right;">
+                    <iframe frameborder="0" style="border:0; width: 100%; height:400px; margin-top: 100px;" src="https://maps.google.com/maps?q=plaza%20lowyat&t=&z=13&ie=UTF8&iwloc=&output=embed" allowfullscreen></iframe>
+                </div>
+            </div>
+            <hr style="height: 0; width: 100%; margin-top: 30px;">
+            <div style="display: flex; width: 100%;">
+                <div style="justify-content: space-between; flex: 33%;">
+                    <h3 style="color: white;">ADDRESS</h3>
+                    <p style="color: white;">
+                        <i class="fa-solid fa-location-dot"></i> 7, Jalan Bintang, Bukit Bintang, 55100 Kuala Lumpur, Wilayah Persekutuan Kuala Lumpur
+                    </p>
+                </div>
+                <div style="justify-content: space-between; flex: 33%; margin-left: 100px;">
+                    <h3 style="color: white;">TEL</h3>
+                    <p style="color: white;">
+                        <i class="fa-solid fa-mobile-screen-button"></i> +6012-311-4350
+                    </p>
+                    <p style="color: white;"><i class="fa-solid fa-phone"></i> +603-7788-6969</p>
+                </div>
+                <div style="justify-content: space-between; flex: 33%;">
+                    <h3 style="color: white;">Email</h3>
+                    <p style="color: white;">
+                        <i class="fa-solid fa-envelope"></i> TP063953@mail.com
+                    </p>
+                    <p>
+                        <a id="brand"><i class="fa-brands fa-facebook"></i></a> <a id="brand"><i class="fa-brands fa-instagram"></i></a> <a id="brand"><i class="fa-brands fa-twitter"></i></a> <a id="brand"><i class="fa-brands fa-linkedin"></i></a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="contfooter">
+        Created by Loh Yen Kuan, 2022
+    </div>
+</body>
+</html>

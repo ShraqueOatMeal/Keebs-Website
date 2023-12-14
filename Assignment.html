@@ -1,0 +1,199 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <script src="https://kit.fontawesome.com/656ff669d1.js" crossorigin="anonymous"></script>
+    <script src="Script1.js"></script>
+    <link href="StyleSheet4.css" rel="stylesheet">
+    <style>
+        @media screen and (max-width: 700px){
+            .overlay{
+                visibility: hidden;
+            }
+
+            .txt{
+                margin-top: 20px;
+            }
+
+            .dwntxt{
+                font-size: 10px;
+                margin-bottom: -30px;
+            }
+            .bignav{
+                display: none;
+            }
+            .nav ul li{
+                list-style-type: none;
+                position: relative;
+                margin-top: -17px;
+                margin-left: 40%;
+                width: 68.46px;
+                height: 50px;
+            }
+            .nav ul li:hover{
+                cursor: pointer;
+            }
+            .nav ul li ul{
+                padding: 0;
+                position: absolute;
+                top: 69px;
+                left: 0;
+                display: none;
+                opacity: 0;
+                visibility: hidden;
+            }
+            .nav ul li ul li{
+                background-color: #3D3D3D;
+                display: block;
+                box-sizing: border-box;
+                width: 490px;
+                margin-left: -220px;
+            }
+            .nav ul li:hover ul{
+                display: block;
+                opacity: 1;
+                visibility: visible;
+            }
+            .nav ul li ul li a{
+                text-decoration: none;
+                color: #AAAAAA;
+                font-size: 18px;   
+                display: block;
+                padding: 15px;
+                text-align: center;
+            }
+            .nav ul li ul li a:hover{
+                color: white;
+            }
+    }
+    @media screen and (min-width: 701px) {
+        .overlay{
+            visibility: visible;
+        }
+        .txt{
+            display: none;
+        }
+        .dwntxt{
+            display: none;
+        }
+        .nav{
+            display: none;
+        }
+    }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <nav id="nav">
+            <div id="mySidepanel" class="sidepanel">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="Login.html">Login</a>
+                <a href="About.html">About</a>
+                <a href="Service.html">Services</a>
+                <a href="Contact.html">Contact</a>
+            </div>
+            <div class="bignav">
+                <button class="openbtn" onclick="openNav()">&#9776;</button>
+                <a class="topnav" href="Prebuilt.html">Prebuilt</a>
+                <a class="topnav" href="Barebone.html">Barebone</a>
+                <a class="topnav" href="Switch.html">Switches</a>
+                <a class="topnav" href="Keycaps.html">Keycaps</a>
+                <a class="topnav" href="Accessories.html">Accessories</a>
+                <a class="logo" href="Assignment.html"><img src="logo.png" style="height: 50px; width: 68.46px;"></a>
+            </div>
+            <div class="nav">
+                <button class="openbtn" onclick="openNav()">&#9776;</button>
+                <ul>
+                    <li><img src="logo.png" style="height: 50px; width: 100%; position: absolute;">
+                        <ul>
+                            <li><a href="Assignment.html">Home</a></li>
+                            <li><a href="Prebuilt.html">Prebuilt</a></li>
+                            <li><a href="Barebone.html">Barebone</a></li>
+                            <li><a href="Switch.html">Switches</a></li>
+                            <li><a href="Keycaps.html">Keycaps</a></li>
+                            <li><a href="Accessories.html">Accessories</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                
+            </div>
+            <div class="search-box">
+                <input type="text" class="search-input" placeholder="Search...">
+                <a class="search-btn" href="#">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </a>
+            </div>
+        </nav>
+        <div id="container-content">
+            <div id="content area">
+                <div class="yt-cover" id="cover"></div>
+                <div id="vid">
+                    <iframe style="width: 100%;" height="506" src="https://www.youtube.com/embed/9F1ZlinK8Ps?playlist=9F1ZlinK8Ps&loop=1&autoplay=1&mute=1&controls=0&modestbranding=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div id="page-title">
+                    KEEBS, YOUR TRUSTED KEYBOARD RESELLER
+                </div>
+                <div id="page-content">
+                    <p class="intro">
+                        Welcome to Keebs, we sell keyboards components, accessories, parts and more. What makes us special is that we provide sevices where we help one to do all the mods
+                        whether it be lubing the stabilizers, lubing the switches, cutting out EVA foam or so, we do it all. We make everything as convenience as possible to the customers
+                        as we sell everything that is needed to build a keyboard and of course pre-built are also available here.
+                    </p>
+                    <hr>
+                    <p style="font-family: 'Copperplate Gothic'; font-size: 38px;"><i class="fa-solid fa-fire-flame-curved"></i> HOT-SELLING</p>
+                    <div class="img">
+                        <a href="#"><img class="sell" src="https://cdn.shopify.com/s/files/1/0549/2681/t/164/assets/gmmk2-home-hero_2x.webp?v=9900608762118909218"></a>
+                        <a href="#">
+                            <div class="overlay">
+                                <div class="selltxtcont">
+                                    <div class="selltxt">GMMK 2</div>
+                                    <div class="sellintro">GMMK 2 IS A PHENOMENAL PREBUILT MADE BY GLORIOUS</div>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="txt">GMMK 2</div>
+                        <div class="dwntxt">GMMK 2 IS A PHENOMENAL PREBUILT MADE BY GLORIOUS</div>
+                    </div>
+                    <br><br>
+                    <hr>
+                    <br><br>
+                    <div class="img">
+                        <a href="#"><img class="sell" src="keyboard.png"></a>
+                        <a href="#">
+                            <div class="overlay">
+                                <div class="selltxtcont">
+                                    <div class="selltxt">GMMK 2 BAREBONE</div>
+                                    <div class="sellintro">YOU CAN CUSTOMIZE WITH A BAREBONE</div>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="txt">GMMK 2 BAREBONE</div>
+                        <div class="dwntxt">YOU CAN CUSTOMIZE WITH A BAREBONE</div>
+                    </div>
+                    <br><br>
+                    <hr>
+                    <br><br>
+                    <div class="img" style="margin-bottom: 50px;">
+                        <a href="#"><img class="sell" src="keycaps.png"></a>
+                        <a href="#">
+                            <div class="overlay">
+                                <div class="selltxtcont">
+                                    <div class="selltxt">AKKO MACAW</div>
+                                    <div class="sellintro">ASA KEYCAPS PATENTED BY AKKO</div>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="txt">AKKO MACAW</div>
+                        <div class="dwntxt">ASA KEYCAPS PATENTED BY AKKO</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        Created by Loh Yen Kuan, 2022
+    </div>
+</body>
+</html>

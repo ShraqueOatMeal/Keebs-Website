@@ -1,0 +1,291 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="https://kit.fontawesome.com/656ff669d1.js" crossorigin="anonymous"></script>
+    <script src="Script1.js"></script>
+    <link href="StyleSheet4.css" rel="stylesheet">
+    <style>
+        @media screen and (max-width: 700px){
+            .bignav{
+                display: none;
+            }
+            .nav ul li{
+                list-style-type: none;
+                position: relative;
+                margin-top: -17px;
+                margin-left: 40%;
+                width: 68.46px;
+                height: 50px;
+            }
+            .nav ul li:hover{
+                cursor: pointer;
+            }
+            .nav ul li ul{
+                padding: 0;
+                position: absolute;
+                top: 69px;
+                left: 0;
+                display: none;
+                opacity: 0;
+                visibility: hidden;
+            }
+            .nav ul li ul li{
+                background-color: #3D3D3D;
+                display: block;
+                box-sizing: border-box;
+                width: 490px;
+                margin-left: -220px;
+            }
+            .nav ul li:hover ul{
+                display: block;
+                opacity: 1;
+                visibility: visible;
+            }
+            .nav ul li ul li a{
+                text-decoration: none;
+                color: #AAAAAA;
+                font-size: 18px;   
+                display: block;
+                padding: 15px;
+                text-align: center;
+            }
+            .nav ul li ul li a:hover{
+                color: white;
+            }
+            .pic{
+                flex-wrap: wrap;
+            }
+            .imgsml{
+                flex: 100%;
+            }
+        }
+        @media screen and (min-width: 701px){
+            .nav{
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <nav id="nav">
+            <div id="mySidepanel" class="sidepanel">
+                <div id="uppanel">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <a href="Login.html">Login</a>
+                    <a href="About.html">About</a>
+                    <a href="Service.html">Services</a>
+                    <a href="Contact.html">Contact</a>
+                    <hr>
+                    <br>
+                    <label for="chckbx" class="label">Switch</label>
+                    <div id="chckbx">
+                        <div class="boxtxt">Linear</div><input class="box" type="checkbox"><br>
+                        <div class="boxtxt">Tactile</div><input class="box" type="checkbox"><br>
+                        <div class="boxtxt">Clicky</div><input class="box" type="checkbox"><br>
+                    </div>
+                    <hr style="width: 85%;">
+                    <br>
+                    <label for="chckbx" class="label">Form Factor</label>
+                    <div id="chckbx">
+                        <div class="boxtxt">60%</div><input class="box" type="checkbox"><br>
+                        <div class="boxtxt">65%</div><input class="box" type="checkbox"><br>
+                        <div class="boxtxt">75%</div><input class="box" type="checkbox"><br>
+                        <div class="boxtxt">TKL</div><input class="box" type="checkbox"><br>
+                        <div class="boxtxt">100%</div><input class="box" type="checkbox"><br>
+                    </div>
+                    <hr style="width: 85%;">
+                    <br>
+                    <label for="chckbx" class="label">Keycaps</label>
+                    <div id="chckbx">
+                        <div class="boxtxt">ASA</div><input class="box" type="checkbox"><br>
+                        <div class="boxtxt">Cherry</div><input class="box" type="checkbox"><br>
+                        <div class="boxtxt">XDA</div><input class="box" type="checkbox"><br>
+                        <div class="boxtxt">OEM</div><input class="box" type="checkbox"><br>
+                    </div>
+                    <hr style="width: 85%;">
+                    <br>
+                    <label for="chckbx" class="label">Lubed</label>
+                    <div id="chckbx">
+                        <div class="boxtxt">Pre-Lubed</div><input class="box" type="checkbox"><br>
+                        <div class="boxtxt">Stock</div><input class="box" type="checkbox"><br>
+                    </div>
+                    <a><div id="filter"><id id="filtxt">Search</id></div></a>
+                    <br><br><br>
+                    <hr style="width: 85%;">
+                </div>
+            </div>
+            <div class="bignav">
+                <button class="openbtn" onclick="openNav()">&#9776;</button>
+                <a class="topnav" href="Prebuilt.html">Prebuilt</a>
+                <a class="topnav" href="Barebone.html">Barebone</a>
+                <a class="topnav" href="Switch.html">Switches</a>
+                <a class="topnav" href="Keycaps.html">Keycaps</a>
+                <a class="topnav" href="Accessories.html">Accessories</a>
+                <a class="logo" href="Assignment.html"><img src="logo.png" style="height: 50px; width: 68.46px;"></a>
+            </div>
+            <div class="nav">
+                <button class="openbtn" onclick="openNav()">&#9776;</button>
+                <ul>
+                    <li><img src="logo.png" style="height: 50px; width: 100%; position: absolute;">
+                        <ul>
+                            <li><a href="Assignment.html">Home</a></li>
+                            <li><a href="Prebuilt.html">Prebuilt</a></li>
+                            <li><a href="Barebone.html">Barebone</a></li>
+                            <li><a href="Switch.html">Switches</a></li>
+                            <li><a href="Keycaps.html">Keycaps</a></li>
+                            <li><a href="Accessories.html">Accessories</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                
+            </div>
+            <div class="search-box">
+                <input type="text" class="search-input" placeholder="Search...">
+                <a class="search-btn" href="#">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </a>
+            </div>
+        </nav>
+        <div id="container-content">
+            <div id="content area">
+                <div class="yt-cover" id="cover" style="background-color: rgb(52, 52, 52); text-align: center;"><div class="vidtxt">Barebone</div></div>
+                <div id="vid">
+                    <iframe style="width: 100%;" height="506" src="https://www.youtube.com/embed/oEC6M_pK_pQ?playlist=oEC6M_pK_pQ&loop=1&autoplay=1&mute=1&controls=0&modestbranding=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div id="page-title">
+                    BAREBONE FOR HIGH CUSTOMIZATION
+                </div>
+                <div id="page-content">
+                    <p class="intro">
+                        Barebones keyboard are for those who wants to customize everything on their keyboard to make it one of the kind of uniqueness and save money from prebuilt
+                        since there are no cost for the switches, keycaps, etc.
+                        Keebs we offer varieties of barebones from 65% to 96%, gasket mounted, tray mounted, you name it we have it. Moreover, we also retail big brands such as Glorious,
+                        Akko, KBDfans etc.
+                    </p>
+                    <hr>
+                    <p style="font-family: 'Copperplate Gothic'; font-size: 28px;">65%</p>
+                    <div class="pic">
+                        <div class="imgsml">
+                            <a href="#"><img class="sellsml" src="https://cdn.shopify.com/s/files/1/0281/3122/9834/products/AKKOMOD005Hotswappable65_BarebonesMechanicalKeyboard-OceanBlue_1024x1024@2x.jpg?v=1642522799"></a>
+                            <a href="#">
+                                <div class="overlaysml">
+                                    <div class="selltxtcont">
+                                        <div class="selltxtsml">MOD005</div>
+                                        <div class="sellintrosml">GASKET MOUNTED BY AKKO</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="imgsml">
+                            <a href="#"><img class="sellsml" src="https://cdn.shopify.com/s/files/1/1473/3902/products/24_cc94b22a-2555-45aa-adae-6ba11bcfbd66.jpg?v=1638338425"></a>
+                            <a href="#">
+                                <div class="overlaysml">
+                                    <div class="selltxtcont">
+                                        <div class="selltxtsml">TOFU65</div>
+                                        <div class="sellintrosml">TRAY MOUNTED BY TOFU</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="imgsml">
+                            <a href="#"><img class="sellsml" src="https://cdn.shopify.com/s/files/1/1473/3902/products/2_ffdd3609-3ed8-4aa0-8d2d-3446d0f0b91d.jpg?v=1646441516"></a>
+                            <a href="#">
+                                <div class="overlaysml">
+                                    <div class="selltxtcont">
+                                        <div class="selltxtsml">D65</div>
+                                        <div class="sellintrosml">BRASS PLATE BY KBDFANS</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <br><br>
+                    <hr>
+                    <p style="font-family: 'Copperplate Gothic'; font-size: 28px;">75%</p>
+                    <div class="pic">
+                        <div class="imgsml">
+                            <a href="#"><img class="sellsml" src="https://files.pccasegear.com/UserFiles/GLO-GMMK-P75-RGB-B-glorious-gmmk-pro-75-barebone-keyboard-black-slate-product3.jpg"></a>
+                            <a href="#">
+                                <div class="overlaysml">
+                                    <div class="selltxtcont">
+                                        <div class="selltxtsml">GMMK PRO</div>
+                                        <div class="sellintrosml">MOST POPULAR GLORIOUS BAREBONE</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="imgsml">
+                            <a href="#"><img class="sellsml" src="https://cdn.shopify.com/s/files/1/0281/3122/9834/products/AKKOMOD0075_1024x1024@2x.jpg?v=1640117764"></a>
+                            <a href="#">
+                                <div class="overlaysml">
+                                    <div class="selltxtcont">
+                                        <div class="selltxtsml">MOD007</div>
+                                        <div class="sellintrosml">AKKO'S GASKET MOUNTED BAREBONES</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="imgsml">
+                            <a href="#"><img class="sellsml" src="https://cdn.shopify.com/s/files/1/1473/3902/products/3c86e19efbc0b331ae9a210cfb5ebbd5_f8cc50d6-ace0-4664-8e43-f6adf1caf5f6.jpg?v=1641518294"></a>
+                            <a href="#">
+                                <div class="overlaysml">
+                                    <div class="selltxtcont">
+                                        <div class="selltxtsml">TOFU84</div>
+                                        <div class="sellintrosml">TRAY MOUNTED FROM TOFU</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <br><br>
+                    <hr>
+                    <p style="font-family: 'Copperplate Gothic'; font-size: 28px;">96%</p>
+                    <div class="pic">
+                        <div class="imgsml">
+                            <a href="#"><img class="sellsml" src="https://cdn.shopify.com/s/files/1/0280/3931/5529/products/003-_-1_157e3a45-1b2f-4601-b366-fd338d403f66.png?v=1630638327"></a>
+                            <a href="#">
+                                <div class="overlaysml">
+                                    <div class="selltxtcont">
+                                        <div class="selltxtsml">MOD003</div>
+                                        <div class="sellintrosml">GASKET MOUNTED BY AKKO</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="imgsml">
+                            <a href="#"><img class="sellsml" src="https://media.karousell.com/media/photos/products/2021/12/29/kbdfans_odin_keyboard__custom__1640748905_ac50255a_progressive.jpg"></a>
+                            <a href="#">
+                                <div class="overlaysml">
+                                    <div class="selltxtcont">
+                                        <div class="selltxtsml">ODIN</div>
+                                        <div class="sellintrosml">GASKET MOUNTED BRASS PLATE BY KBDFANS</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="imgsml">
+                            <a href="#"><img class="sellsml" src="https://cdn.shopify.com/s/files/1/0549/2681/t/164/assets/glorious_keyboards_gmmk_2_barebones_lifestyle_mobile_2x.webp"></a>
+                            <a href="#">
+                                <div class="overlaysml">
+                                    <div class="selltxtcont">
+                                        <div class="selltxtsml">GMMK2</div>
+                                        <div class="sellintrosml">NEW FROM GLORIOUS</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <br><br>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        Created by Loh Yen Kuan, 2022
+    </div>
+</body>
+</html>

@@ -1,0 +1,187 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="https://kit.fontawesome.com/656ff669d1.js" crossorigin="anonymous"></script>
+    <script src="Script1.js"></script>
+    <link href="StyleSheet4.css" rel="stylesheet">
+    <style>
+        p{
+            color: white;
+            line-height: 1.5;
+        }
+
+       #flextxt i{
+            color: white;
+            font-size: 48px;
+        }
+        h3{
+            color: white;
+        }
+
+        #abtfooter {
+            background-color: rgb(33, 33, 33);
+            height: 50px;
+            text-align: center;
+            font-size: 12px;
+            padding-top: 8px;
+            color: rgb(212, 212, 212);
+            width: 100%;
+            display: grid;
+            top: 880px;
+            z-index: 3;
+            position: relative;
+        }
+
+        #aboutcont{
+            display: grid;
+        }
+
+    @media screen and (max-width: 700px){
+        #abtfooter{
+            top: 940px;
+        }
+        .bignav{
+                display: none;
+            }
+            .nav ul li{
+                list-style-type: none;
+                position: relative;
+                margin-top: -17px;
+                margin-left: 40%;
+                width: 68.46px;
+                height: 50px;
+            }
+            .nav ul li:hover{
+                cursor: pointer;
+            }
+            .nav ul li ul{
+                padding: 0;
+                position: absolute;
+                top: 69px;
+                left: 0;
+                display: none;
+                opacity: 0;
+                visibility: hidden;
+            }
+            .nav ul li ul li{
+                background-color: #3D3D3D;
+                display: block;
+                box-sizing: border-box;
+                width: 490px;
+                margin-left: -220px;
+            }
+            .nav ul li:hover ul{
+                display: block;
+                opacity: 1;
+                visibility: visible;
+            }
+            .nav ul li ul li a{
+                text-decoration: none;
+                color: #AAAAAA;
+                font-size: 18px;   
+                display: block;
+                padding: 15px;
+                text-align: center;
+            }
+            .nav ul li ul li a:hover{
+                color: white;
+            }
+    }
+    @media screen and (min-width: 701px){
+        .nav{
+            display: none;
+        }
+    }
+    </style>
+</head>
+<body>
+    <div id="aboutcont">
+        <nav id="nav">
+            <div id="mySidepanel" class="sidepanel">
+                <div id="uppanel">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <a href="Login.html">Login</a>
+                    <a href="About.html">About</a>
+                    <a href="Service.html">Services</a>
+                    <a href="Contact.html">Contact</a>
+                </div>
+            </div>
+            <div class="bignav">
+                <button class="openbtn" onclick="openNav()">&#9776;</button>
+                <a class="topnav" href="Prebuilt.html">Prebuilt</a>
+                <a class="topnav" href="Barebone.html">Barebone</a>
+                <a class="topnav" href="Switch.html">Switches</a>
+                <a class="topnav" href="Keycaps.html">Keycaps</a>
+                <a class="topnav" href="Accessories.html">Accessories</a>
+                <a class="logo" href="Assignment.html"><img src="logo.png" style="height: 50px; width: 68.46px;"></a>
+            </div>
+            <div class="nav">
+                <button class="openbtn" onclick="openNav()">&#9776;</button>
+                <ul>
+                    <li><img src="logo.png" style="height: 50px; width: 100%; position: absolute;">
+                        <ul>
+                            <li><a href="Assignment.html">Home</a></li>
+                            <li><a href="Prebuilt.html">Prebuilt</a></li>
+                            <li><a href="Barebone.html">Barebone</a></li>
+                            <li><a href="Switch.html">Switches</a></li>
+                            <li><a href="Keycaps.html">Keycaps</a></li>
+                            <li><a href="Accessories.html">Accessories</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                
+            </div>
+            <div class="search-box">
+                <input type="text" class="search-input" placeholder="Search...">
+                <a class="search-btn" href="#">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </a>
+            </div>
+        </nav>
+        <div id="back" style="width: 100%; position: absolute; flex-wrap: wrap;">
+            <div id="backimg" style="height: 500px; width: 100%; position: absolute;">
+                <img style="width: 100%; height: 925px; position: absolute;" src="https://img.freepik.com/free-photo/modern-dark-leather-desk-with-mockup-place-keyboard-black-background-top-view_67155-16371.jpg">
+            </div>
+            <div id="headtxt" style="text-align: center; position: relative;">
+                <p style="color: white; font-size: 48px; margin-top: 300px;">About Us</p>
+                <hr style="width: 150px; height: 1px; background-color: white; margin-top: -20px;">
+                <br><br>
+                <div id="flexbox" style="display: flex; justify-content: space-between; width: 100%;">
+                    <div id="flextxt" style="width: 30%;">
+                        <i class="fa-solid fa-clock-rotate-left"></i><br>
+                        <h3>HISTORY</h3>
+                        <p>
+                            The founder of this company Johnny Joestar discover his enthusiasm towards mechanincal keyboards in the year of 2002.
+                            He started his keyboard journey through his first custom pc and fell in love immediately, and thought that mechanical
+                            keyboards deserve the love and community that's why he created this company.
+                        </p>
+                    </div>
+                    <div id="flextxt" style="width: 30%;">
+                        <i class="fa-solid fa-bullseye"></i><br>
+                        <h3>MISSION & VISION</h3>
+                        <p>
+                            Our mission is to provide the most convenience services to our customer no matter the request. Our vision is to bring as much people to the community of
+                            mechanical keyboards, to let people realize the beauty of custom mechanical keyboards.
+                        </p>
+                    </div>
+                    <div id="flextxt" style="width: 30%;">
+                        <i class="fa-solid fa-gem"></i><br>
+                        <h3>CORE VALUES</h3>
+                        <p>
+                            Our core values are <b>QUALITY</b>, <b>TRUST</b> & <b>EFFICIENCY</b>. We only give out the most quality keyboards to our customers, low quality keyboard
+                            is not acceptable in keebs. We are a man of our words, we do whatever we have told the customers, we built trust with our customers. We provide the most
+                            fastest service possible to our customer, not more than 2 weeks. Satisfying customers is the best we can do.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="abtfooter">
+        Created by Loh Yen Kuan, 2022
+    </div>
+</body>
+</html>

@@ -1,0 +1,289 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="https://kit.fontawesome.com/656ff669d1.js" crossorigin="anonymous"></script>
+    <script src="Script1.js"></script>
+    <link href="StyleSheet4.css" rel="stylesheet">
+    <style>
+        @media screen and (max-width: 700px){
+            .bignav{
+                display: none;
+            }
+            .nav ul li{
+                list-style-type: none;
+                position: relative;
+                margin-top: -17px;
+                margin-left: 40%;
+                width: 68.46px;
+                height: 50px;
+            }
+            .nav ul li:hover{
+                cursor: pointer;
+            }
+            .nav ul li ul{
+                padding: 0;
+                position: absolute;
+                top: 69px;
+                left: 0;
+                display: none;
+                opacity: 0;
+                visibility: hidden;
+            }
+            .nav ul li ul li{
+                background-color: #3D3D3D;
+                display: block;
+                box-sizing: border-box;
+                width: 490px;
+                margin-left: -220px;
+            }
+            .nav ul li:hover ul{
+                display: block;
+                opacity: 1;
+                visibility: visible;
+            }
+            .nav ul li ul li a{
+                text-decoration: none;
+                color: #AAAAAA;
+                font-size: 18px;   
+                display: block;
+                padding: 15px;
+                text-align: center;
+            }
+            .nav ul li ul li a:hover{
+                color: white;
+            }
+            .pic{
+                flex-wrap: wrap;
+            }
+            .imgsml{
+                flex: 100%;
+            }
+        }
+        @media screen and (min-width: 701px){
+            .nav{
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <nav id="nav">
+            <div id="mySidepanel" class="sidepanel">
+                <div id="uppanel">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <a href="Login.html">Login</a>
+                    <a href="About.html">About</a>
+                    <a href="Service.html">Services</a>
+                    <a href="Contact.html">Contact</a>
+                    <hr>
+                    <br>
+                    <label for="chckbx" class="label">Switch</label>
+                    <div id="chckbx">
+                        <div class="boxtxt">Linear</div><input class="box" type="checkbox"><br>
+                        <div class="boxtxt">Tactile</div><input class="box" type="checkbox"><br>
+                        <div class="boxtxt">Clicky</div><input class="box" type="checkbox"><br>
+                    </div>
+                    <hr style="width: 85%;">
+                    <br>
+                    <label for="chckbx" class="label">Form Factor</label>
+                    <div id="chckbx">
+                        <div class="boxtxt">60%</div><input class="box" type="checkbox"><br>
+                        <div class="boxtxt">65%</div><input class="box" type="checkbox"><br>
+                        <div class="boxtxt">75%</div><input class="box" type="checkbox"><br>
+                        <div class="boxtxt">TKL</div><input class="box" type="checkbox"><br>
+                        <div class="boxtxt">100%</div><input class="box" type="checkbox"><br>
+                    </div>
+                    <hr style="width: 85%;">
+                    <br>
+                    <label for="chckbx" class="label">Keycaps</label>
+                    <div id="chckbx">
+                        <div class="boxtxt">ASA</div><input class="box" type="checkbox"><br>
+                        <div class="boxtxt">Cherry</div><input class="box" type="checkbox"><br>
+                        <div class="boxtxt">XDA</div><input class="box" type="checkbox"><br>
+                        <div class="boxtxt">OEM</div><input class="box" type="checkbox"><br>
+                    </div>
+                    <hr style="width: 85%;">
+                    <br>
+                    <label for="chckbx" class="label">Lubed</label>
+                    <div id="chckbx">
+                        <div class="boxtxt">Pre-Lubed</div><input class="box" type="checkbox"><br>
+                        <div class="boxtxt">Stock</div><input class="box" type="checkbox"><br>
+                    </div>
+                    <a><div id="filter"><id id="filtxt">Search</id></div></a>
+                    <br><br><br>
+                    <hr style="width: 85%;">
+                </div>
+            </div>
+            <div class="bignav">
+                <button class="openbtn" onclick="openNav()">&#9776;</button>
+                <a class="topnav" href="Prebuilt.html">Prebuilt</a>
+                <a class="topnav" href="Barebone.html">Barebone</a>
+                <a class="topnav" href="Switch.html">Switches</a>
+                <a class="topnav" href="Keycaps.html">Keycaps</a>
+                <a class="topnav" href="Accessories.html">Accessories</a>
+                <a class="logo" href="Assignment.html"><img src="logo.png" style="height: 50px; width: 68.46px;"></a>
+            </div>
+            <div class="nav">
+                <button class="openbtn" onclick="openNav()">&#9776;</button>
+                <ul>
+                    <li><img src="logo.png" style="height: 50px; width: 100%; position: absolute;">
+                        <ul>
+                            <li><a href="Assignment.html">Home</a></li>
+                            <li><a href="Prebuilt.html">Prebuilt</a></li>
+                            <li><a href="Barebone.html">Barebone</a></li>
+                            <li><a href="Switch.html">Switches</a></li>
+                            <li><a href="Keycaps.html">Keycaps</a></li>
+                            <li><a href="Accessories.html">Accessories</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                
+            </div>
+            <div class="search-box">
+                <input type="text" class="search-input" placeholder="Search...">
+                <a class="search-btn" href="#">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </a>
+            </div>
+        </nav>
+        <div id="container-content">
+            <div id="content area">
+                <div class="yt-cover" id="cover" style="background-color: rgb(52, 52, 52); text-align: center;"><div class="vidtxt">Accessories</div></div>
+                <div id="vid">
+                    <iframe style="width: 100%;" height="506" src="https://www.youtube.com/embed/9fdE3q1ji-w?playlist=9fdE3q1ji-w&loop=1&autoplay=1&mute=1&controls=0&modestbranding=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div id="page-title">
+                    ACCESSORIES FOR MODDING
+                </div>
+                <div id="page-content">
+                    <p class="intro">
+                        Accessories are needed when you mod your keyboards. In here you can find any accessories needed for your mod. The most basic kits are a brush, krytox 250g0,
+                        case foam, plate foam, keycap puller, switch puller and switch opener.
+                    </p>
+                    <hr>
+                    <p style="font-family: 'Copperplate Gothic'; font-size: 28px;">LUBRICANTS</p>
+                    <div class="pic">
+                        <div class="imgsml">
+                            <a href="#"><img class="sellsml" src="https://thockpop.com/wp-content/uploads/2021/09/krytox205g0-3.jpg"></a>
+                            <a href="#">
+                                <div class="overlaysml">
+                                    <div class="selltxtcont">
+                                        <div class="selltxtsml">KRYTOX 205g0</div>
+                                        <div class="sellintrosml">LUBRICANT FOR SWITCHES</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="imgsml">
+                            <a href="#"><img class="sellsml" src="https://media.karousell.com/media/photos/products/2022/1/9/krytox_105_lubricant_1641721736_70002392.jpg"></a>
+                            <a href="#">
+                                <div class="overlaysml">
+                                    <div class="selltxtcont">
+                                        <div class="selltxtsml">KRYTOX 105</div>
+                                        <div class="sellintrosml">LUBRICANT FOR SPRINGS</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="imgsml">
+                            <a href="#"><img class="sellsml" src="https://cf.shopee.sg/file/d6fed9fe635e3dfb2d966b51c6cb5e64"></a>
+                            <a href="#">
+                                <div class="overlaysml">
+                                    <div class="selltxtcont">
+                                        <div class="selltxtsml">DIELECTRIC GREASE</div>
+                                        <div class="sellintrosml">LUBRICANT FOR STABILIZER</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <br><br>
+                    <hr>
+                    <p style="font-family: 'Copperplate Gothic'; font-size: 28px;">TOOLS</p>
+                    <div class="pic">
+                        <div class="imgsml">
+                            <a href="#"><img class="sellsml" src="https://cdn11.bigcommerce.com/s-up92fzossx/images/stencil/1280x1280/products/229/596/MX_Compatible_Switch_Opener_2__59482.1607610256.jpg?c=1"></a>
+                            <a href="#">
+                                <div class="overlaysml">
+                                    <div class="selltxtcont">
+                                        <div class="selltxtsml">SWITCH OPENER</div>
+                                        <div class="sellintrosml">AS THE NAME IMPLIES</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="imgsml">
+                            <a href="#"><img class="sellsml" src="https://i.pinimg.com/originals/5c/7a/23/5c7a23abfd3a969cc7d5a404713f20bb.jpg"></a>
+                            <a href="#">
+                                <div class="overlaysml">
+                                    <div class="selltxtcont">
+                                        <div class="selltxtsml">KEYCAPS PULLER</div>
+                                        <div class="sellintrosml">TO PULL OUT KEYCAPS</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="imgsml">
+                            <a href="#"><img class="sellsml" src="https://42keebs.eu/wp-content/uploads/2021/01/IMG_20210225_144728.jpg"></a>
+                            <a href="#">
+                                <div class="overlaysml">
+                                    <div class="selltxtcont">
+                                        <div class="selltxtsml">STEM HOLDER</div>
+                                        <div class="sellintrosml">FOR PRODUCTIVITY WHEN LUBING STEMS</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <br><br>
+                    <hr>
+                    <p style="font-family: 'Copperplate Gothic'; font-size: 28px;">UPGRADES</p>
+                    <div class="pic">
+                        <div class="imgsml">
+                            <a href="#"><img class="sellsml" src="https://cf.shopee.co.th/file/76f1e6ad696f99d7d225b7d77d4cf4c8_tn"></a>
+                            <a href="#">
+                                <div class="overlaysml">
+                                    <div class="selltxtcont">
+                                        <div class="selltxtsml">STABILIZERS</div>
+                                        <div class="sellintrosml">GET RID OF RATTLES</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="imgsml">
+                            <a href="#"><img class="sellsml" src="https://cdn.shopify.com/s/files/1/0495/0104/4904/products/White.jpg?v=1617922386"></a>
+                            <a href="#">
+                                <div class="overlaysml">
+                                    <div class="selltxtcont">
+                                        <div class="selltxtsml">SWITCH FILMS</div>
+                                        <div class="sellintrosml">GET RID OF WOBBLES ON SWITCH</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="imgsml">
+                            <a href="#"><img class="sellsml" src="https://cdn.shopify.com/s/files/1/1473/3902/products/A_7396411d-c153-44b7-8a20-8308e02ee642.jpg?v=1631925720"></a>
+                            <a href="#">
+                                <div class="overlaysml">
+                                    <div class="selltxtcont">
+                                        <div class="selltxtsml">KEYBOARD PLATE</div>
+                                        <div class="sellintrosml">FOR THE ACCOUSTIC</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <br><br>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        Created by Loh Yen Kuan, 2022
+    </div>
+</body>
+</html>
